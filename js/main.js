@@ -12,6 +12,8 @@ $(document).ready(function(){
 	$('.todo').hide('fast');
 
 	//EX 4
+	// La page doit etre exécuté via un serveur web
+	// pour utiliser l'Ajax (ex: WAMP, MAMP, EASY PHP, ...)
 	$.get('chuck.html' , function(data){
 		$('#tp1-4 .loading').hide('fast');
 		$(data).appendTo($('#chuck'));
@@ -19,5 +21,6 @@ $(document).ready(function(){
 
 	//EX 5
 	console.exception('BOOM');
+	// Pour minifier: http://marijnhaverbeke.nl/uglifyjs
 });
 
